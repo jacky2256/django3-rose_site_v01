@@ -1,0 +1,132 @@
+.foot_base {
+    box-sizing: border-box;
+
+
+
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.foot_label {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 82px;
+
+    color: #40B65A;
+
+    mix-blend-mode: normal;
+}
+
+.foot-logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.nav_back {
+    box-sizing: border-box;
+
+    background: #40B65A;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav_text {
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    color: #FBF8F8;
+}
+
+.base_col1 {
+    background: #D9D9D9;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.base_text {
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-decoration: none;
+
+    color: #40B65A;
+}
+
+.base_col2_1 {
+    box-sizing: border-box;
+
+    background: #40B65A;
+    border: 1px solid #40B65A;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.base_col2_2 {
+    height: 434px;
+
+    background: #FBF8F8;
+    border: 1px solid #8A8686;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.base_col3_1 {
+    box-sizing: border-box;
+
+    background: #40B65A;
+    border: 1px solid #40B65A;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.base_col3_2 {
+    height: 434px;
+
+    background: #FBF8F8;
+    border: 1px solid #8A8686;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.example1 {
+    background-color: aqua;
+}
+
+.example2 {
+    background-color: rgb(226, 4, 45);
+}
+
+.example3 {
+    background-color: rgb(27, 37, 104);
+}
+
+.example4 {
+    background-color: rgb(79, 84, 88);
+}
+
+.example5 {
+    background-color: rgb(21, 20, 20);
+}
+
+.example6 {
+    background-color: rgb(169, 161, 14);
+}
