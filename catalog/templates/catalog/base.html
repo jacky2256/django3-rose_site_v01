@@ -14,16 +14,105 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <!-- base.css local file -->
-    <link rel="stylesheet" href="{% static 'catalog/base.css' %}">
+    <link rel="stylesheet" href="{% static 'catalog/css/base.css' %}">
     <title>Rose-Life</title>
 </head>
 
 <body>
 
-    <div class="foot_base">
-        Base
+    <div class="container-fluid text-center foot_base">
+        <div class="row row-cols-lg-0">
+            <div class="col-2 col-sm-2">
+                <img src="{% static 'catalog/img/logo-600.png' %}" class="foot-logo" alt="">
+            </div>
+            <div class="col-8 col-sm-8">
+                <a href="#" class="foot_label">Rose Life</a>
+            </div>
+            <div class="col-2 col-sm-2">
+                <a href="#" class="btn btn-primary">login</a>
+                <a href="#" class="btn btn-primary">register</a>
+            </div>
+        </div>
+    </div>
     </div>
 
+    <nav class="navbar navbar-expand-lg nav_back">
+        <div class="container-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav_text" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_text" aria-current="page" href="#">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_text" href="#">О Нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_text" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-sm">
+        <div class=" row base_col1">
+            <a href="#" class="base_text">Home /</a>
+        </div>
+        <div class=" row">
+            <div class="col-3">
+                <div class="row base_col2_1">
+                    <p class="nav_text">Главное меню</p>
+                </div>
+                <div class="row base_col2_2 ">
+                    подколонка2
+                </div>
+                <div class="row base_col2_1">
+                    <p class="nav_text">Советы</p>
+                </div>
+                <div class="row base_col2_2 ">
+                    подколонка2
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row example1">
+                    строка1
+                </div>
+                <div class="row example2">
+                    строка2
+                </div>
+                <div class="row example3">
+                    строка3
+                </div>
+                <div class="row example4">
+                    строка4
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="row base_col3_1">
+                    <p class="nav_text">Популярные розы</p>
+                </div>
+                <div class="row base_col3_2 ">
+                    подколонка2
+                </div>
+                <div class="row base_col3_1">
+                    <p class="nav_text">Мы рекомендуем</p>
+                </div>
+                <div class="row base_col3_2 ">
+                    подколонка2
+                </div>
+            </div>
+        </div>
+        <div class="row example3">
+            строка
+        </div>
+    </div>
     {% block content %}
 
     {% endblock %}
