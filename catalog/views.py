@@ -6,3 +6,7 @@ from django.http import HttpResponse
 
 def home(request):
     return render(request, 'catalog/home.html')
+
+
+def catalog(request):
+    return render(request, 'catalog/catalog.html')

@@ -1,5 +1,31 @@
 {% extends 'catalog/base.html' %}
+{% load static %}
+
+{% block file_static %}
+<link rel="stylesheet" href="{% static 'catalog/css/home.css' %}">
+{% endblock %}
 
 {% block content %}
+
+<div class="row example1">
+    <div class="col-8 example2">
+        колонка1
+    </div>
+    <div class="col-4 example3">
+        <div class="row base_col2_1">
+            <p class="nav_text d-flex align-items-center justify-content-center">Главное меню</p>
+        </div>
+        <div class="row base_col2_2 ">
+            подколонка2
+        </div>
+        <div class="row base_col2_1">
+            <p class="nav_text d-flex align-items-center justify-content-center">Советы</p>
+        </div>
+        <div class="row base_col2_2 ">
+            подколонка2
+        </div>
+    </div>
+</div>
+
 
 {% endblock %}

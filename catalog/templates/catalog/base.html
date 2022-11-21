@@ -15,6 +15,11 @@
         crossorigin="anonymous"></script>
     <!-- base.css local file -->
     <link rel="stylesheet" href="{% static 'catalog/css/base.css' %}">
+
+    {% block file_static %}
+
+    {% endblock %}
+
     <title>Rose-Life</title>
 </head>
 
@@ -23,14 +28,21 @@
     <div class="container-fluid text-center foot_base">
         <div class="row row-cols-lg-0">
             <div class="col-2 col-sm-2">
-                <img src="{% static 'catalog/img/logo-600.png' %}" class="foot-logo" alt="">
+                <img src="{% static 'catalog/img/logo-600.png' %}" style="margin-bottom: 10px;" class="foot-logo"
+                    alt="">
             </div>
-            <div class="col-8 col-sm-8">
+            <div class="col-8 col-sm-8 d-flex align-items-center justify-content-center">
                 <a href="#" class="foot_label">Rose Life</a>
             </div>
-            <div class="col-2 col-sm-2">
-                <a href="#" class="btn btn-primary">login</a>
-                <a href="#" class="btn btn-primary">register</a>
+            <div class="col-2 col-sm-2 d-flex align-items-center justify-content-center">
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="btn btn-primary">login</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="btn btn-primary">register</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -68,54 +80,67 @@
         <div class=" row">
             <div class="col-3">
                 <div class="row base_col2_1">
-                    <p class="nav_text">Главное меню</p>
+                    <p class="nav_text d-flex align-items-center justify-content-center">Главное меню</p>
                 </div>
                 <div class="row base_col2_2 ">
                     подколонка2
                 </div>
                 <div class="row base_col2_1">
-                    <p class="nav_text">Советы</p>
+                    <p class="nav_text d-flex align-items-center justify-content-center">Советы</p>
                 </div>
                 <div class="row base_col2_2 ">
                     подколонка2
                 </div>
             </div>
-            <div class="col-6">
-                <div class="row example1">
-                    строка1
-                </div>
-                <div class="row example2">
-                    строка2
-                </div>
-                <div class="row example3">
-                    строка3
-                </div>
-                <div class="row example4">
-                    строка4
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="row base_col3_1">
-                    <p class="nav_text">Популярные розы</p>
-                </div>
-                <div class="row base_col3_2 ">
-                    подколонка2
-                </div>
-                <div class="row base_col3_1">
-                    <p class="nav_text">Мы рекомендуем</p>
-                </div>
-                <div class="row base_col3_2 ">
-                    подколонка2
-                </div>
+            <div class="col-9">
+                {% block content %}
+
+                {% endblock %}
             </div>
         </div>
-        <div class="row example3">
-            строка
+        <div class="row base_ground base_ground_text">
+            <p class="d-flex justify-content-center">2022 Rose Life, 61231 Бад-Наухайм - Штайнфурт</p>
+            <div class="col text-start">
+                <div class="row align-items-center">
+                    <div class="col-5">
+
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-4">
+                                <p>Часы работы:</p>
+                                <p>Телефон:</p>
+                            </div>
+                            <div class="col-5">
+                                <p>8:00 - 20:00</p>
+                                <p>+373 69546837</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-start">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-1">
+
+                            </div>
+                            <div class="col-3">
+                                <p>Сайт:</p>
+                                <p>Email::</p>
+                            </div>
+                            <div class="col-4">
+                                <p>rose-site.com</p>
+                                <p>a.bojic@gmail.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    {% block content %}
-
-    {% endblock %}
 
 </body>
 
